@@ -1,0 +1,483 @@
+body{
+    background: #ffffff;
+}
+
+//Phone Register Section
+#register-box{
+    font-family: Poppins;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    box-shadow: 0 .5rem 1rem rgba(23,16,159,.1);
+}
+.register-box2{
+    font-family: Poppins;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    box-shadow: 0 .5rem 1rem rgba(23,16,159,.1);
+}
+#register-box{
+    .register-text{
+        font-weight: 600;
+    }
+    input{
+        height: 50px;
+    }
+    select{
+        height: 50px;
+    }
+    button{
+        height: 50px;
+        background: #8ACBBB !important;
+        border-color: #8ACBBB !important;
+        font-weight: 800;
+    }
+    button:hover{
+        background: #149777 !important;
+        border-color: #149777 !important;
+    }
+    .btn-simple{
+        color: #888 !important;
+        background: #F3F6F5 !important;
+        border-color: #ececf6 !important;
+    }
+    .btn-simple:hover{
+        background: #F3F6F5 !important;
+        border-color: #ececf6 !important;
+    }
+    .register-bottom-text{
+        font-size: 13px;
+        margin: 0 80px;
+    }
+    .register-bottom-text2{
+        font-weight: 600;
+    }
+    .verify-text{
+
+    }
+}
+
+#myModal{
+    #register-box{
+        padding-top: 50px !important;
+        box-shadow: none;
+    }
+    .close:hover {
+        color: #ececf6;
+        background-color: red !important;
+    }
+}
+
+/*User Dashboard*/
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#user-dashboard{
+    font-family: Poppins;
+    border: 1px solid rgba(0,47,52,0.2);
+    box-shadow: 0 0.5rem 1rem rgba(23, 16, 159, 0.1);
+}
+#user-dashboard ul li a{
+    text-decoration: none;
+}
+#user-dashboard{
+    #dashboard-left-side{
+        a{
+            text-decoration: none;
+        }
+        ul{
+            li{
+                border: 2px solid #000;
+                margin-bottom: 15px;
+                background-color: transparent;
+                transition: 0.1s;
+                a{
+                    color: #000;
+                }
+            }
+            li:hover{
+                box-shadow: inset 0px 0px 0px 2px #000;
+
+            }
+        }
+    }
+}
+#dashboard-right-side .user-text{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DFDFDF;
+}
+#dashboard-right-side{
+    .ad-box{
+        margin-top: 15vh;
+        .carousel-inner{
+            background-color: #000000;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        #custCarousel .carousel-indicators {
+            position: static;
+            margin-top: 5px
+        }
+
+        #custCarousel .carousel-indicators>li {
+            width: 100px
+        }
+
+        #custCarousel .carousel-indicators li img {
+            display: block;
+            opacity: 0.5;
+            width: 80px;
+            height: 80px;
+        }
+
+        #custCarousel .carousel-indicators li.active img {
+            opacity: 1
+        }
+
+        #custCarousel .carousel-indicators li:hover img {
+            opacity: 0.75
+        }
+
+        .carousel-item img {
+            width: 80%
+        }
+
+        .post-details{
+            margin-top: 80px;
+            .ad-price{
+                i{
+                    font-size: 25px;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    padding: 10px;
+                    border-radius: 50px;
+                }
+                i:hover{
+                    background-color: #34B56B;
+                    color: #fafafa;
+                }
+            }
+            .sold-mark{
+                a{
+                    text-decoration: none;
+                    p{
+                        font-size: 15px;
+                        i{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                a:hover{
+                    color: #34B56B;
+                }
+            }
+        }
+    }
+}
+
+//ad post dashboard
+//For Togle
+/* don't target ll list items in you page, be more specific */
+.drop-nav > ul {
+    display: none;
+}
+
+.drop-nav.hov{
+    color: #002f34;
+    font-weight: 800;
+}
+.drop-nav.active > ul {
+    display: block;
+}
+
+#dashboard-post{
+    h3{
+        margin-left: 35px;
+    }
+    ul#category{
+        .level1{
+            text-align: center;
+            padding: 10px;
+
+            border: 1px solid rgba(0,47,52,.2);
+            border-bottom: 0;
+            cursor: pointer;
+            i{
+                font-size: 25px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .level2{
+                margin-top: 10px;
+                border-top: 1px solid rgba(0,47,52,.2);
+                padding-left: 0;
+                font-weight: normal;
+                li{
+                    padding: 10px;
+                    border: 0;
+                    color: #002f34;
+                }
+                li:hover{
+                    background-color: rgba(0,47,52,.2);
+                    border-radius: 10px;
+                }
+            }
+        }
+        .level1 i:first-child{
+            margin-right: 0;
+        }
+    }
+    ul#category li:last-child{
+        border-bottom: 1px solid rgba(0,47,52,.2);
+    }
+}
+
+//ad post pages
+#dashboard-post{
+    .breadcrumb{
+        background-color: transparent;
+    }
+}
+#dashboard-post{
+    #ad-title-input,.input-field{
+        background-color: transparent;
+        border: 1px solid #000;
+    }
+    .ad-box label:last-child{
+        font-size: 12px;
+    }
+    .ad-box{
+        .price-tag{
+            span{
+                background-color: transparent;
+                border: 1px solid #000;
+                border-right: 0;
+            }
+        }
+        .img-box{
+            img{
+                vertical-align: bottom;
+            }
+            .name-confirm-input{
+                vertical-align: top;
+            }
+        }
+    }
+    .confirm-location{
+        select{
+            border: 1px solid #000000;
+        }
+    }
+
+}
+
+/* The container */
+.radio-container {
+    display: inline;
+    position: relative;
+    padding-left: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+    background-color: #00a49f;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+//Upload post ad i0mage
+#imagePreview,#imagePreview2,#imagePreview3,#imagePreview4 {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    display: inline-block;
+    //background-image: url('public/images/camera.png');
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+#uploadFile,#uploadFile2,#uploadFile3,#uploadFile4{
+    display: none
+}
+
+//////////////////////////////////////////
+//Homepage
+#search{
+    .container{
+        //background: url("hero_bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    form{
+        div.input-group{
+            border: 1px solid #dee2e6;
+        }
+    }
+}
+
+#popular-categories{
+    .col-md-2{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    ul{
+        padding: 0;
+        .list-header{
+            font-size: 16px;
+            font-weight: 800;
+        }
+        li{
+            a{
+                color: #000000;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #c51f1a;
+            }
+        }
+        .list-footer{
+            font-weight: 800;
+            i{
+                font-size: 12px;
+                color: #c51f1a;
+                margin-left: 2px;
+                transition: 0.3s;
+            }
+            a{
+                color: #c51f1a;
+            }
+        }
+        .list-footer:hover{
+            i{
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.home-ads{
+    img{
+        height: 150px;
+        width: auto;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .card-subtitle{
+        color: rgba(0, 47, 52, 0.80);
+    }
+    .border-div{
+        border-left: 2px solid #E3342F;
+        border-right: 2px solid #E3342F;
+        .card-body{
+            p{
+                font-size: 10px;
+                color: rgba(0, 47, 52, 0.80);
+            }
+        }
+    }
+}
+
+#download-app{
+    background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 575px) {
+    #popular-categories{
+        margin-top: 0 !important;
+        .popular-title{
+            font-size: 23px;
+        }
+        .row{
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+    #popular-phones{
+        .popular-title{
+            font-size: 23px;
+        }
+        .row:first-child{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+    #popular-cars{
+        .popular-title{
+            font-size: 23px;
+        }
+        .row:first-child{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+    #popular-propert-sale{
+        .popular-title{
+            font-size: 23px;
+        }
+        .row:first-child{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}
